@@ -1,0 +1,18 @@
+digraph {
+	START
+	list_tables
+	call_get_schema
+	get_schema
+	generate_query
+	check_query
+	run_query
+	END
+	START -> list_tables
+	list_tables -> call_get_schema
+	call_get_schema -> get_schema
+	get_schema -> generate_query
+	generate_query -> check_query [label="should_continue = \"check_query\""]
+	generate_query -> END [label="should_continue = END"]
+	check_query -> run_query
+	run_query -> generate_query
+}
