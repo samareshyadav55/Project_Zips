@@ -1,0 +1,5 @@
+Info
+
+for q and a -- Azure openai devanci model 003
+for summarization -- Azure openai gpt 34 turbo
+for relevent questions -- Azure openai  devanci model 003
